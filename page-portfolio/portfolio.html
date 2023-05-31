@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="HDarden | Personal Portfolio" />
+    <meta name="author" content="Hannah Darden" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDarden | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo-2.png">
+    <link rel="stylesheet" href="../page-portfolio/assets/css/style.css" />
+</head>
+<body>
+    
+    <main>
+
+        <header class="main-header">
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="portfolio.html"  class="current-page">Portfolio</a></li>
+                    <li><a href="../page-contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <section class="header-section">
+                <h1>Portfolio</h1>
+                <nav class="second-nav-btn">
+                    <ul>
+                        <li><button class="btn" onclick="filterSelection('all')">#allprojects</button></li>
+                        <li><button class="btn" onclick="filterSelection('design')">#design</button></li>
+                        <li><button class="btn" onclick="filterSelection('development')">#development</button></li>
+                        <li><button class="btn" onclick="filterSelection('writing')">#writing</button></li>
+                        <li><button class="btn" onclick="filterSelection('programming')">#programming</button></li>
+                    </ul>
+                </nav>
+            </section>
+
+        </header>
+
+        <section class="articles" class="second-nav-fltr">
+            <div class="row" class="second-nav-fltr">
+            <article class="fltr writing" class="post" class="col">
+                <header class="article-header">
+                  <figure>
+                    <a href="../page-portfolio/assets/img/wp-writing.pdf" rel="bookmark" title="link to this post"><img src="../page-portfolio/assets/img/wp-writing.jpg" alt="Writing Sample screenshot" /></a>
+                  </figure>
+                  <h2>Five Workplace Writing Tips</h2>
+                </header>
+                <p>Writing Assignment for course: RHET-3326-Technical Writing. This is a writing sample written as a professional memo. </p>
+                <time class="post-date" datetime="2021-02">February, 2021</time>
+            </article>
+            <article class="fltr writing" class="post" class="col">
+              <header class="article-header">
+                <figure>
+                  <a href="../page-portfolio/assets/img/sp-writing.pdf" rel="bookmark" title="link to this post"><img src="../page-portfolio/assets/img/sp-writing.jpg" alt="Writing Sample screenshot" /></a>
+                </figure>
+                <h2>Unsolicited Short Proposal</h2>
+              </header>
+              <p>Writing Assignment for course: RHET-3326-Technical Writing. This is a writing sample written as a professional memo. </p>
+              <time class="post-date" datetime="2021-05">May, 2021</time>
+            </article>
+            <article class="fltr programming" class="post" class="col">
+              <header class="article-header">
+                <figure>
+                  <a href="https://hmdarden.github.io/it-onyx/circle/index.html" rel="bookmark" title="link to this post"><img src="../page-portfolio/assets/img/cir-calc.JPG" alt="Circle Radius Calculator screenshot" /></a>
+                </figure>
+                <h2>Circle Radius Calculator</h2>
+              </header>
+              <p>Javascript Assignment for course: ITEC-3650-Guided Apps in IT. Create a javascript program that prompts for radius value, validates the radius valud to ensure that it is a valid and positive real number using jQueryValidation. Program should calculate the diameter, circumference, and area based on the radius provided. </p>
+              <time class="post-date" datetime="2023-02">February, 2023</time>
+            </article>
+            <article class="fltr programming" class="post" class="col">
+              <header class="article-header">
+                <figure>
+                  <a href="https://hmdarden.github.io/it-onyx/currency-value-conversion/index.html" rel="bookmark" title="link to this post"><img src="../page-portfolio/assets/img/cur-val.JPG" alt="Currency Value screenshot" /></a>
+                </figure>
+                <h2>Currency Value History </h2>
+              </header>
+              <p>Javascript Assignment for course: ITEC-3650-Guided Apps in IT. Create a javascript program that lets the user select at least 5 currencies to convert from and to. Should also prompt for to and from dates. The application should construct a URL and make an AJAX call to the Polygon.io Forex data. </p>
+              <time class="post-date" datetime="2023-02">February, 2023</time>
+            </article>
+            <article class="fltr design development" class="post" class="col">
+                <header class="article-header">
+                  <figure>
+                    <a href="https://hmdarden.github.io/it-onyx/individual-web-project/index.html" rel="bookmark" title="link to this post"><img src="../page-portfolio/assets/img/mcu-blog.jpg" alt="Marvel Cinematic Universe Blog homepage screenshot" /></a>
+                  </figure>
+                  <h2>MCU Blog Site </h2>
+                </header>
+                <p>Individual web project for course: ITEC-3650-Guided Apps in IT. This project focused on the use of HTML, CSS, and text animation experimentation.</p>
+                <time class="post-date" datetime="2023-03">March, 2023</time>
+            </article>
+            <article class="fltr programming" class="post" class="col">
+              <header class="article-header">
+                <figure>
+                  <a href="https://hmdarden.github.io/it-onyx/mars-rover-photo-explr/index.html" rel="bookmark" title="link to this post"><img src="../page-portfolio/assets/img/photo-xplr.JPG" alt="Photo Explorer screenshot" /></a>
+                </figure>
+                <h2>Mars Rover Photo Explorer</h2>
+              </header>
+              <p>Javascript Assignment for course: ITEC-3650-Guided Apps in IT. Create a javascript program that lets the user select between 3 Mars Rovers and specific time frames to initiate an AJAX call utilizing a NASA API key that will then generate 25 photos taken on the time frame selected.</p>
+              <time class="post-date" datetime="2023-03">March, 2023</time>
+            </article>
+            <article class="fltr design development" class="post" class="col">
+              <header class="article-header">
+                <figure>
+                  <a href="https://hmdarden.github.io/it-onyx/final-project/index.html" rel="bookmark" title="link to this post"><img src="../page-portfolio/assets/img/tbe.jpg" alt="The Buffalo Experience homepage screenshot" /></a>
+                </figure>
+                <h2>The Buffalo Experience </h2>
+              </header>
+              <p>Co-Project Manager in a collaborative web project for a client with a startup business idea in course: ITEC-3650-Guided Apps in IT. While each team member had separate duties, mine focused on building the e-commerce platform using <a href="https://www.rentle.io/">Rentle.io</a>, mobile responsiveness for the overall site, and the contact form.</p>
+              <time class="post-date" datetime="2023-04">April, 2023</time>
+            </article>
+            <article class="fltr design development" class="post" class="col">
+              <header class="article-header">
+                <figure>
+                  <a href="https://hmdarden.github.io/ifsc-3342/final-project/index.html" rel="bookmark" title="link to this post"><img src="../page-portfolio/assets/img/wvw-blog.jpg" alt="Witcher v Witcher Blog homepage screenshot" /></a>
+                </figure>
+                <h2>Witcher v Witcher Blog</h2>
+              </header>
+              <p>Individual web project for course: IFSC-3342-Mobile Web Development. The main goal for this project was creating a site that is mobile responsive for viewers. This project focused on the use of HTML and CSS grid.</p>
+              <time class="post-date" datetime="2023-05">May, 2023</time>
+            </article>
+            <article class="fltr design" class="post" class="col">
+          <header class="article-header">
+            <figure>
+              <a href="https://www.figma.com/file/sW4zkBrhQIql4KR73PE9SY/Website-Concept-Paradise-Pastry?type=design&t=us7bmDD1jDpOfw4s-1" rel="bookmark" title="link to this post"><img src="../page-portfolio/assets/img/web-concept.jpg" alt="Paradise Pastry Web Concept screenshot" /></a>
+            </figure>
+            <h2>Paradise Pastry Website Concept</h2>
+          </header>
+          <p>Website Concept Design for course: RHET-4305-Document Design. This project focused on creating design concepts for a pastry shop's website. The designs all center around the logos I created earlier in the year for the same pastry shop. Softwares used were Canva and Figma. </p>
+          <time class="post-date" datetime="2023-05">May, 2023</time>
+            </article>
+            <article class="fltr design" class="post" class="col">
+        <header class="article-header">
+          <figure>
+            <a href="https://www.canva.com/design/DAFfGkdAxLA/Mbs2w7lvJ6LLqe3IMyOaPw/edit?utm_content=DAFfGkdAxLA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" rel="bookmark" title="link to this post"><img src="../page-portfolio/assets/img/ux-bcard.jpg" alt="UX Business Card screenshot" /></a>
+          </figure>
+          <h2>UX Generation Business Card</h2>
+        </header>
+        <p>Business Card Design for course: RHET-4305-Document Design. This project focused on creating a business card design. The designs all center around the logo I created. Canva was the software used. </p>
+        <time class="post-date" datetime="2023-05">May, 2023</time>
+            </article>
+            <article class="fltr design" class="post" class="col">
+      <header class="article-header">
+        <figure>
+          <a href="https://www.canva.com/design/DAFiRhe3dsg/rZ3F5ZWgI3bqr1fFMT-iqw/edit?utm_content=DAFiRhe3dsg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" rel="bookmark" title="link to this post"><img src="../page-portfolio/assets/img/ux-envelope.jpg" alt="UX Envelope screenshot" /></a>
+        </figure>
+        <h2>UX Generation Envelope</h2>
+      </header>
+      <p>Envelope Design for course: RHET-4305-Document Design. This project focused on creating an envelope design for a company logo I created. Canva was the software used. </p>
+      <time class="post-date" datetime="2023-05">May, 2023</time>
+            </article>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <ul>
+                <li><a href="portfolio.html">Projects</a></li>
+                <li>&copyHDarden | <a href="#top">Back to Top</a></li>
+                <li><a href="../page-contact/contact.html">Contact Me</a></li>
+            </ul>
+        </footer>
+
+    </main>
+
+</body>
+<script src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</html>

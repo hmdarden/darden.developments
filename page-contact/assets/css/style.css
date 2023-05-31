@@ -1,0 +1,149 @@
+html{
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: sans-serif; 
+    background-color: #000;
+    color:#fff;
+    margin:0;
+}
+
+main{
+    background-image: linear-gradient(to top, #4b003b, black 12%);
+    padding: 1px 0px 20px 0px;
+    margin:0 auto;
+}
+
+img{
+    max-width:100%;
+}
+
+/*-----------------------.main-header/Nav Section-------------------------*/
+
+.main-header nav{
+  text-align: right;
+  padding: 20px 20px 0px 0px;
+  letter-spacing: 5px;
+}
+
+.main-header nav ul li{
+  display: inline;
+  margin:35px;
+  text-transform: uppercase;
+}
+
+.main-header nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-header nav ul li a.current-page{
+  background-color:#5f3c57;
+  padding: 10px 25px;
+}
+
+.main-header nav ul li a:hover{
+  background-color: #fff;
+  color: #4b003b;
+  transition: .2s;
+  padding: 15px 30px;
+}
+
+.header-section{
+    padding:60px 0px 0px 0px;
+  }
+  
+  .header-section h1{
+      text-align: left;
+      padding: 0px 0px 1px 60px;
+      font-size: 35px;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+  }
+
+  .cont-soc{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+  }
+
+  .contact{
+    padding:0px 0px 0px 200px;
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    gap:10px;
+  }
+
+  .contact h2{
+    font-size:18px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .contact ul{
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+  }
+
+  .contact li{
+    padding:0px 0px 20px 0px;
+  }
+
+  .socials{
+    padding:0px 0px 0px 200px;
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    gap:10px;
+  }
+
+  .socials h2{
+    font-size:18px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .socials ul{
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+  }
+  
+  .socials li{
+    display:inline;
+    padding:0px 22px 20px 0px;
+  }
+  
+
+/*-----------------------Footer Section-------------------------*/
+
+  footer ul{
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+  }
+  
+  footer ul li{
+    display: inline;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  
+  footer ul li a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover{
+    background-color: #fff;
+    color: #4b003b;
+    transition: .2s;
+    padding: 10px 25px;
+  }
