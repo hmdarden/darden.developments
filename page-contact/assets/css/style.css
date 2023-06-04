@@ -96,6 +96,15 @@ img{
     padding:0px 0px 20px 0px;
   }
 
+  .contact li a{
+    text-decoration:none;
+    color:#fff;
+  }
+
+  .contact li a:hover{
+    color:#b377a5;
+  }
+
   .socials{
     padding:0px 0px 0px 200px;
     display:grid;
@@ -123,27 +132,92 @@ img{
 
 /*-----------------------Footer Section-------------------------*/
 
-  footer ul{
-    display:flex;
-    text-align: center;
-    justify-content: space-between;
-    padding: 0px 20px 0px 20px;
-  }
+footer{
+  padding: 50px 0px 20px 0px;
+}
+
+footer nav{
+  text-align: center;
+  padding: 20px 20px 0px 0px;
+  letter-spacing: 5px;
+}
+
+footer nav ul li{
+  display: inline;
+  margin:35px;
+  text-transform: uppercase;
+}
+
+footer nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+footer nav ul li a.current-page{
+  background-color:#5f3c57;
+  padding: 10px 25px;
+}
+
+footer nav ul li a:hover{
+  background-color: #fff;
+  color: #4b003b;
+  transition: .2s;
+  padding: 15px 30px;
+}
+
+.mobile-link{
+  display:none;
+}
+
+
+
+  @media screen and (max-width: 910px) {
+
+    header{
+        background: #000;
+    }
   
-  footer ul li{
-    display: inline;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-  }
+    .main-nav{
+        background-image: linear-gradient(to top, #000, #4b003b 55%);
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        margin:0 auto;
+    }
   
-  footer ul li a{
-    color: #fff;
-    text-decoration: none;
-  }
+    .main-nav a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
   
-  footer ul li a:hover{
-    background-color: #fff;
-    color: #4b003b;
-    transition: .2s;
-    padding: 10px 25px;
-  }
+      footer{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        margin:0 auto;
+    }
+  
+    footer a {
+        float: none;
+        display: block;
+        text-align: center;
+      }
+  
+    .desktop-link{
+        display:none;
+    }
+  
+    .mobile-link{
+        display:inline;
+    }
+    }
+
+    @media screen and (max-width: 770px){
+
+      .cont-soc{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        gap:10px;
+      }
+    }
