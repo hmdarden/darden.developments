@@ -116,6 +116,8 @@ nav.second-nav-btn{
   background-color: #a7a7a7;
   color:#290220;
   padding: 3px 5px 3px 5px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
   transition: .5s;
 }
 
