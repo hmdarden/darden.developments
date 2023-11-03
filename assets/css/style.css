@@ -47,6 +47,8 @@ header nav ul li a{
 header nav ul li a.current-page{
     background-color:#5f3c57;
     padding: 10px 25px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 header nav ul li a:hover{
@@ -54,6 +56,8 @@ header nav ul li a:hover{
     color: #4b003b;
     transition: .2s;
     padding: 15px 30px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 /*-----------------------Hero Section-------------------------*/
