@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Resume</title>
-    <meta name="description" content="Resume Information on Hannah Darden" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="HDarden | Personal Portfolio" />
     <meta name="author" content="Hannah Darden" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-  </head>
-  
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDarden | Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo-2.png">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
     
-    <header class="container">
-      <!-- Main Navigation -->
-      <nav class="primary">
+    <main itemscope itemtype="http://schema.org/Person" class="container">
+
+        <header>
+
+            <nav id="main-nav" class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="page-portfolio/portfolio.html">Portfolio</a></li>
+                    <li><a href="page-contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+          <!-- Main Navigation -->
+          <section id="resume-nav" class="resume-nav">
+      <nav id="secondary-nav" class="secondary-nav">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
     </nav>
-    </header>
-     <!-- Main -->
-    <main itemscope itemtype="http://schema.org/Person" class="container">
+          </section>
+      </header>
     <section id="about">
       <h2 class="hide">Personal Details</h2>
       <div class="intro">
@@ -143,10 +156,23 @@ dispatchers to ensure efficient communication and response times.</p>
           <span>2021-present</span>
       </article>
     </section>
-  </main>
-    <footer id="colophon" role="contentinfo">
-      <h6> &copy; 2023 Hannah Darden | <a href="#top">Back to Top</a></h6>
-    </footer>
-  </body>
-  
+</html>
+
+        <footer>
+        <nav id="main-footer" class="main-footer">
+            <ul>
+                <li><a href="page-portfolio/portfolio.html">Projects</a></li>
+                <li class="desktop-link"><a href="#top">&copyHDarden | Back to Top</a></li>
+                <li><a href="page-contact/contact.html">Contact Me</a></li>
+                <li class="mobile-link"><a href="#top">&copyHDarden | Back to Top</a></li>
+            </ul>
+        </nav>
+        </footer>
+
+    </main>
+
+</body>
+
+<script src="https://kit.fontawesome.com/ccb178c4a6.js" crossorigin="anonymous"></script>
+
 </html>
