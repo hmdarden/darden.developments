@@ -1,0 +1,277 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+  }
+  
+  /*---------------Images------------------*/
+  
+  img {
+    max-width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* ------------ Utility Classes  ------------*/
+  
+  .container{
+    margin:0 auto;
+    /*Below Color-- #4b003b*/
+    background:rgba(75,0,59,29);
+    line-height:1.13em;
+    color:white;
+  }
+  
+  /*-------------Hidden Elements---------------*/
+  
+  .hide{
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      white-space: nowrap;
+  }
+  
+  /*-----------------Body Section Styles------------------*/
+  
+  nav{ 
+    display:flex;
+    justify-content:space-between;
+    list-style:none;
+    padding:20px 30px 20px 30px;
+    border-bottom: 4px double white;
+  }
+  
+  nav a{
+    padding:8px 16px;
+    text-align:center;
+    text-decoration:none;
+    font-size:.75em;
+    background-color:rgba(0,0,0,.4);
+    transition: .5s;
+    border-radius: 10px;
+  }
+  
+  nav a:hover, nav a:active{
+    background-color:rgba(0,0,0,.8);
+  }
+  
+  main{
+    padding-top: 1px 20px;
+  }
+  
+  body{
+    font-family: sans-serif;
+  }
+  
+  header a:link, header a:visited{
+    color:#fff;
+  }
+  
+  a:link, a:visited{
+    color:white;
+  }
+  
+  #about{
+    padding:10px;
+    line-height:2em;
+  }
+  
+  .intro{
+    padding:20px;
+  }
+  
+  .intro h1{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size:1.5em;
+    padding-top:1.5%;
+  }
+  
+  dl{
+    border-top: 4px double white;
+    display: grid;
+    grid-template-rows:auto;
+    grid-template-columns:8em 1fr;
+  }
+  
+  dt{
+    width:200px;
+    font-weight:100;
+    grid-column: 1;
+    padding: 10px;
+  }
+  dd{
+    margin:0;
+    grid-column: 2;
+    padding: 10px 40px;
+  }
+  
+  .related-links{
+    display:flex;
+    justify-content:space-between;
+    list-style:none;
+    padding-left:30px;
+    padding-right:30px;
+  }
+  
+  .related-links a{
+    padding:8px 16px;
+    text-align:center;
+    text-decoration:none;
+    color: #fff;
+    font-size:.75em;
+    background-color:rgba(0,0,0,.4);
+    transition: .5s;
+    border-radius: 10px;
+  }
+  
+  .related-links a:hover, .related-links a:active{
+    background-color:rgba(0,0,0,.8);
+  }
+  
+  #skills{
+    border: 4px double white;
+    margin:10px;
+    padding:10px;
+  }
+  
+  #skills li {
+    list-style-type:none;
+  }
+  
+  #experience{
+    padding:10px;
+  }
+  
+  .job *[itemprop="jobTitle"], 
+  .job *[itemprop="name"], 
+  .job *[itemprop="url"], 
+  .job *[itemprop="addressLocality"],
+  .certificate *[itemprop="name"]
+  {
+    display:block;
+  }
+  
+  .job h3{
+    margin-top:30px;
+  }
+  
+  .job{
+    border-bottom:1px solid white;
+    padding-bottom:20px;
+  }
+  
+  #education{
+    padding:10px;
+  }
+  
+  #colophon{
+  }
+  
+  #colophon h6 {
+    padding: 20px;
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  #colophon h6 a:link,
+  #colophon h6 a:visited {
+    color: black;
+  }
+  
+  /*----------- Reordering Source Using Grid ----------*/
+  
+  main.container{
+    display:grid;
+    grid-template-areas:
+      "title"
+      "intro"
+      "about"
+      "skills"
+      "experience"
+      "education";
+  }
+  
+  .page-title{
+    grid-area: title;
+  }
+  #about{
+    grid-area: about;
+  }
+  #skills{
+    grid-area: skills;
+  }
+  #experience{
+    grid-area: experience;
+  }
+  #education{
+    grid-area: education;
+  }
+  
+  /*--------------------Media Queries---------------------------*/
+  
+  @media screen and (min-width:600px){
+    
+    main.container{
+    max-width:750px; 
+    grid-template-columns: 36.5% auto;
+    grid-template-areas:
+      "title title"
+      "about about"
+      "skills education"
+      "experience experience";
+    }
+    
+    header.container{
+      max-width:750px;
+    }
+    
+    #skills{
+      border:none;
+     /* display:flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center; */
+    }
+    
+  }
+  
+  @media screen and (min-width:750px){
+    
+    main.container{
+    max-width:992px; 
+    grid-template-columns: 36.5% auto;
+    grid-template-areas:
+      "title title"
+      "about about"
+      "skills education"
+      "experience experience";
+    }
+    
+    header.container{
+      max-width:992px;
+    }
+    
+    #skills{
+      border:none;
+     /* display:flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center; */
+    }
+    
+  }
