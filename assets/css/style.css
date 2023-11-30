@@ -10,7 +10,6 @@ html{
 body{
     min-width:440px;
     font-family: sans-serif; 
-    background-color: white;
     color:#fff;
     margin:0;
 }
@@ -24,8 +23,7 @@ main{
 
 /*header{
     background-image: linear-gradient(to bottom left, #4b003b 15%, black 45%);
-}
-*/
+}*/
 
   
 header nav{
@@ -46,24 +44,25 @@ header nav ul li a{
 }
 
 header nav ul li a.current-page{
-    background-color:#5f3c57;
+    background-color:#00DDF4;
     padding: 10px 25px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 7px;
 }
 
 header nav ul li a:hover{
     background-color: #fff;
-    color: #4b003b;
+    color: #2DA7B5;
     transition: .2s;
     padding: 15px 30px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 7px;
 }
 
 /*-----------------------Hero Section-------------------------*/
 
 .hero{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     width: 100%;
     height: 650px;
     display: flex;
@@ -72,6 +71,16 @@ header nav ul li a:hover{
     padding: 0px 200px 50px 200px;
     text-align:center;
   }
+
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
   .hero-about{
     width: 500px;
     padding-top: 180px;
@@ -117,8 +126,7 @@ header nav ul li a:hover{
     border: #fff 2px solid;
     margin: 10px;
     padding: 5px 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 7px;
     color: #ffffff;
   }
 
@@ -130,17 +138,20 @@ header nav ul li a:hover{
   }
 
   button:hover{
-    background-color: #4b003b;
-    border: #4b003b 2px solid;
+    background-color: #2DA7B5;
+    border: #2DA7B5 2px solid;
     color: #fff;
     transition: .2s;
   }
 
   .imp-p{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     margin:20px;
     text-align:center;
     text-transform: uppercase;
-    color:#cca7c4;
+    color:#00DDF4;
   }
 
 /*-----------------------About Section-------------------------*/
@@ -218,7 +229,7 @@ article p{
 /*-----------------------Footer Section-------------------------*/
 
 footer{
-    background-image: linear-gradient(to top, #4b003b, black 55%);
+    background-image: linear-gradient(to top, #3B6F75, black 55%);
     padding: 250px 0px 20px 0px;
 }
 
@@ -240,15 +251,16 @@ footer nav ul li a{
 }
 
 footer nav ul li a.current-page{
-    background-color:#5f3c57;
+    background-color:#00DDF4;
     padding: 10px 25px;
 }
 
 footer nav ul li a:hover{
     background-color: #fff;
-    color: #4b003b;
+    color: #00DDF4;
     transition: .2s;
     padding: 15px 30px;
+    border-radius: 7px;
 }
 
 .mobile-link{
@@ -291,7 +303,6 @@ footer nav ul li a:hover{
     }
 
     .main-nav{
-        background-image: linear-gradient(to top, #000, #4b003b 55%);
         display:flex;
         flex-direction:column;
         justify-content:space-between;
@@ -305,6 +316,7 @@ footer nav ul li a:hover{
       }
 
     .hero{
+        padding-top: 75px;
         height:750px;
     }
 
@@ -345,8 +357,8 @@ footer nav ul li a:hover{
     }
     
     .hero-btn a:hover{
-        background-color: #4b003b;
-        border: #4b003b 2px solid;
+        background-color: #00DDF4;
+        border: #00DDF4 2px solid;
         color: #fff;
         transition: .2s;
     }

@@ -19,7 +19,17 @@ main{
   background-color: #000;
 }
 
+section {
+  animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 img {
+  animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    padding-top: 30px;
   max-width:100%;
   display: block;
   margin-left: auto;
@@ -27,9 +37,21 @@ img {
 }
 
 .container{
+  animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   margin:0 auto;
   line-height:1.13em;
   color:white;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 .hide{
@@ -69,19 +91,17 @@ header nav ul li a{
 }
 
 header nav ul li a.current-page{
-  background-color:#5f3c57;
+  background-color:#00DDF4;
   padding: 10px 25px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-radius: 7px;
 }
 
 header nav ul li a:hover{
   background-color: #fff;
-  color: #4b003b;
+  color: #00DDF4;
   transition: .2s;
   padding: 15px 30px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-radius: 7px;
 }
 
 section nav {
@@ -96,11 +116,10 @@ text-decoration: none;
 
 section nav a:hover{
 background-color: #fff;
-  color: #4b003b;
+  color: #00DDF4;
   transition: .2s;
   padding: 5px 3px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-radius: 7px;
 }
 
 
@@ -155,13 +174,12 @@ dd{
   color: #fff;
   font-size:.75em;
   transition: .5s;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-radius: 7px;
 }
 
 .related-links a:hover, .related-links a:active{
   background-color:#fff;
-  color: #4b003b;
+  color: #00DDF4;
 }
 
 #skills{
@@ -191,8 +209,8 @@ dd{
 /*-----------------------Footer Section-------------------------*/
 
 footer{
- /* background-image: linear-gradient(to top, #4b003b, black 55%);*/
-  padding: 50px 0px 20px 0px;
+  background-image: linear-gradient(to top, #3B6F75, black 55%);
+  padding: 250px 0px 20px 0px;
 }
 
 footer nav{
@@ -213,17 +231,16 @@ footer nav ul li a{
 }
 
 footer nav ul li a.current-page{
-  background-color:#5f3c57;
+  background-color:#00DDF4;
   padding: 10px 25px;
 }
 
 footer nav ul li a:hover{
   background-color: #fff;
-  color: #4b003b;
+  color: #00DDF4;
   transition: .2s;
   padding: 15px 30px;
-border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
+border-radius: 7px;
 }
 
 .mobile-link{
@@ -322,8 +339,8 @@ border-bottom-right-radius: 10px;
   }
 
   .hero-btn a:hover{
-      background-color: #4b003b;
-      border: #4b003b 2px solid;
+      background-color: #2DA7B5;
+      border: #2DA7B5 2px solid;
       color: #fff;
       transition: .2s;
   }
