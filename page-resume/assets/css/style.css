@@ -23,14 +23,15 @@ section {
   animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    margin: 10px;
 }
 
 img {
   animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    padding-top: 30px;
-  max-width:100%;
+    padding-top: 50px;
+  max-width:70%;
   display: block;
   margin-left: auto;
   margin-right: auto;
