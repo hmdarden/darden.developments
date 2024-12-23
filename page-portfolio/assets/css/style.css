@@ -269,11 +269,21 @@ footer nav ul li a:hover{
       text-align: center;
   }
 
+  .main-header nav ul li{
+    display: block;
+    margin:35px;
+    text-transform: uppercase;
+  }
+
   .second-nav-btn{
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     margin:0 auto;
+}
+
+.second-nav-btn ul{
+  padding-left: 0px;
 }
 
     footer{
