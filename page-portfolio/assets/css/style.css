@@ -40,6 +40,7 @@ img{
 
 .main-header nav ul li a{
   color: #fff;
+  padding: 10px 25px;
   text-decoration: none;
 }
 
@@ -53,7 +54,6 @@ img{
   background-color: #fff;
   color: #00DDF4;
   transition: .2s;
-  padding: 15px 30px;
   border-radius: 7px;
 }
 
@@ -221,6 +221,7 @@ footer nav ul li{
 
 footer nav ul li a{
   color: #fff;
+  padding: 10px 25px;
   text-decoration: none;
 }
 
@@ -233,7 +234,6 @@ footer nav ul li a:hover{
   background-color: #fff;
   color: #00DDF4;
   transition: .2s;
-  padding: 15px 30px;
   border-radius: 7px;
 }
 

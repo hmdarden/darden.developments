@@ -40,6 +40,7 @@ header nav ul li{
 
 header nav ul li a{
     color: #fff;
+    padding: 10px 25px;
     text-decoration: none;
 }
 
@@ -53,7 +54,7 @@ header nav ul li a:hover{
     background-color: #fff;
     color: #2DA7B5;
     transition: .2s;
-    padding: 15px 30px;
+    padding: 10px 25px;
     border-radius: 7px;
 }
 
@@ -68,7 +69,7 @@ header nav ul li a:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0px 200px 50px 200px;
+    padding: 0px 80px 50px 200px;
     text-align:center;
   }
 
@@ -87,10 +88,13 @@ header nav ul li a:hover{
   }
 
   .hero-about h2{
+    font-family: Georgia, serif;
     text-transform: uppercase;
-    font-size: 35px;
+    font-weight:lighter;
+    font-style:italic;
+    font-size: 25px;
     line-height: 1;
-    letter-spacing: 10px;
+    letter-spacing: 4px;
     text-shadow: 2px 2px #0a0a0a;
   }
 
@@ -99,6 +103,10 @@ header nav ul li a:hover{
     letter-spacing: 5px;
     text-transform: uppercase;
     line-height: 1;
+  }
+
+  .hero-about p{
+    font-size:20px;
   }
 
   #hero-mob-profile{
@@ -110,7 +118,7 @@ header nav ul li a:hover{
   }
 
   .hero-profile img{
-    width:500px;
+    width:450px;
     height:auto;
   }
 
@@ -247,6 +255,7 @@ footer nav ul li{
 
 footer nav ul li a{
     color: #fff;
+    padding: 10px 25px;
     text-decoration: none;
 }
 
@@ -259,7 +268,6 @@ footer nav ul li a:hover{
     background-color: #fff;
     color: #00DDF4;
     transition: .2s;
-    padding: 15px 30px;
     border-radius: 7px;
 }
 
@@ -337,7 +345,7 @@ footer nav ul li a:hover{
 
     .hero-about h2{
         text-transform: uppercase;
-        font-size: 35px;
+        font-size: 25px;
         line-height: 1;
         letter-spacing: 5px;
         text-shadow: 2px 2px #0a0a0a;
