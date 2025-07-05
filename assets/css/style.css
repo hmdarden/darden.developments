@@ -10,12 +10,12 @@ html{
 body{
     min-width:440px;
     font-family: sans-serif; 
-    color:#fff;
+    color:#90b8bc;
     margin:0;
 }
 
 main{
-    background-color: #000;
+    background-color: #011e23;
     margin:0 auto;
 }
 
@@ -32,6 +32,10 @@ header nav{
     letter-spacing: 5px;
 }
 
+header nav ul {
+    padding: 20px 20px 20px 20px;
+}
+
 header nav ul li{
     display: inline;
     margin:35px;
@@ -39,20 +43,20 @@ header nav ul li{
 }
 
 header nav ul li a{
-    color: #fff;
+    color: #90b8bc;
     padding: 10px 25px;
     text-decoration: none;
 }
 
 header nav ul li a.current-page{
-    background-color:#00DDF4;
+    background-color:#215c63;
     padding: 10px 25px;
     border-radius: 7px;
 }
 
 header nav ul li a:hover{
-    background-color: #fff;
-    color: #2DA7B5;
+    background-color: #90b8bc;
+    color: #215c63;
     transition: .2s;
     padding: 10px 25px;
     border-radius: 7px;
@@ -69,8 +73,8 @@ header nav ul li a:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0px 80px 50px 200px;
-    text-align:center;
+    padding: 0px 170px 50px 200px;
+    text-align:left;
   }
 
   @keyframes fadeInAnimation {
@@ -88,12 +92,11 @@ header nav ul li a:hover{
   }
 
   .hero-about h2{
-    font-family: Georgia, serif;
     text-transform: uppercase;
     font-weight:lighter;
     font-style:italic;
-    font-size: 25px;
-    line-height: 1;
+    font-size: 28px;
+    line-height: 1.4;
     letter-spacing: 4px;
     text-shadow: 2px 2px #0a0a0a;
   }
@@ -125,30 +128,30 @@ header nav ul li a:hover{
   .hero-name{
     margin-bottom: 10px;
     font-size: 3em;
-    color: #fff;
+    color: #90b8bc;
     text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   button {
     background-color: transparent;
-    border: #fff 2px solid;
+    border: #90b8bc 2px solid;
     margin: 10px;
     padding: 5px 10px;
     border-radius: 7px;
-    color: #ffffff;
+    color: #90b8bc;
   }
 
   .hero-btn a{
-    color: #ffffff;
+    color: #90b8bc;
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
   }
 
   button:hover{
-    background-color: #2DA7B5;
-    border: #2DA7B5 2px solid;
-    color: #fff;
+    background-color: #215c63;
+    border: #215c63 2px solid;
+    color: #90b8bc;
     transition: .2s;
   }
 
@@ -156,10 +159,11 @@ header nav ul li a:hover{
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    font-size:25px;
     margin:20px;
     text-align:center;
     text-transform: uppercase;
-    color:#00DDF4;
+    color:#63c0ca;
   }
 
 /*-----------------------About Section-------------------------*/
@@ -237,7 +241,7 @@ article p{
 /*-----------------------Footer Section-------------------------*/
 
 footer{
-    background-image: linear-gradient(to top, #3B6F75, black 55%);
+    background-image: linear-gradient(to top, #3B6F75, #011e23 55%);
     padding: 250px 0px 20px 0px;
 }
 
@@ -247,6 +251,10 @@ footer nav{
     letter-spacing: 5px;
 }
 
+footer nav ul{
+    padding: 20px 20px 20px 20px;
+}
+
 footer nav ul li{
     display: inline;
     margin:35px;
@@ -254,19 +262,19 @@ footer nav ul li{
 }
 
 footer nav ul li a{
-    color: #fff;
+    color: #90b8bc;
     padding: 10px 25px;
     text-decoration: none;
 }
 
 footer nav ul li a.current-page{
-    background-color:#00DDF4;
+    background-color:#215c63;
     padding: 10px 25px;
 }
 
 footer nav ul li a:hover{
-    background-color: #fff;
-    color: #00DDF4;
+    background-color: #90b8bc;
+    color: #215c63;
     transition: .2s;
     border-radius: 7px;
 }
@@ -282,19 +290,22 @@ footer nav ul li a:hover{
 @media screen and (max-width: 1400px){
 
     .hero{
-        padding: 0px 150px 50px 150px;
+        padding: 0px 100px 50px 150px;
     }
 }
 
 @media screen and (max-width: 1260px){
 
     .hero{
-        padding: 0px 0px 50px 0px;
+        padding: 0px 100px 50px 0px;
     }
 }
 
 @media screen and (max-width: 1150px){
 
+    .hero{
+        padding: 0px 50px 50px 0px;
+    }
   .hero-about h2{
     font-size: 25px;
   }
@@ -303,9 +314,11 @@ footer nav ul li a:hover{
     font-size: 13px;
   }
 }
+@media screen and (max-width: 1030px) {
 
-@media screen and (max-width: 910px) {
-
+    .hero{
+        padding: 75px 50px 10px 50px;
+    }
     header{
         background: #000;
     }
@@ -345,12 +358,16 @@ footer nav ul li a:hover{
 
     .hero-about h2{
         text-transform: uppercase;
-        font-size: 25px;
-        line-height: 1;
+        font-size: 20px;
+        line-height: 1.4;
         letter-spacing: 5px;
         text-shadow: 2px 2px #0a0a0a;
         padding-top: 60px;
       }
+
+    .hero-about p{
+        font-size:15px;
+    }
 
     .hero-name{
        margin-top: 15px;
@@ -382,8 +399,8 @@ footer nav ul li a:hover{
     }
 
     .imp-p{
-        padding-top: 20px;
-        margin:40px;
+        padding-top: 4px;
+        margin:10px;
     }
 
     .resources h2{
