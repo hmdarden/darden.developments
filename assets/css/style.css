@@ -10,7 +10,7 @@ html{
 body{
     min-width:440px;
     font-family: sans-serif; 
-    color:#90b8bc;
+    color:#c5f1f1;
     margin:0;
 }
 
@@ -47,20 +47,20 @@ header nav ul li{
 }
 
 header nav ul li a{
-    color: #90b8bc;
+    color: #c5f1f1;
     padding: 10px 25px;
     text-decoration: none;
 }
 
 header nav ul li a.current-page{
-    background-color:#215c63;
+    background-color:#3c8383;
     padding: 10px 25px;
     border-radius: 7px;
 }
 
 header nav ul li a:hover{
-    background-color: #90b8bc;
-    color: #215c63;
+    background-color: #c5f1f1;
+    color: #3c8383;
     transition: .2s;
     padding: 10px 25px;
     border-radius: 7px;
@@ -102,7 +102,7 @@ header nav ul li a:hover{
     font-size: 28px;
     line-height: 1.4;
     letter-spacing: 4px;
-    text-shadow: 2px 2px #0a0a0a;
+    text-shadow: 2px 2px #122727;
   }
 
   .hero-about h4{
@@ -132,30 +132,29 @@ header nav ul li a:hover{
   .hero-name{
     margin-bottom: 10px;
     font-size: 3em;
-    color: #90b8bc;
-    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #c5f1f1;
   }
 
   button {
     background-color: transparent;
-    border: #90b8bc 2px solid;
+    border: #c5f1f1 2px solid;
     margin: 10px;
     padding: 5px 10px;
     border-radius: 7px;
-    color: #90b8bc;
+    color: #c5f1f1;
   }
 
   .hero-btn a{
-    color: #90b8bc;
+    color: #c5f1f1;
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
   }
 
   button:hover{
-    background-color: #215c63;
-    border: #215c63 2px solid;
-    color: #90b8bc;
+    background-color: #3c8383;
+    border: #3c8383 2px solid;
+    color: #c5f1f1;
     transition: .2s;
   }
 
@@ -167,7 +166,7 @@ header nav ul li a:hover{
     margin:20px;
     text-align:center;
     text-transform: uppercase;
-    color:#63c0ca;
+    color:#78dbdb;
   }
 
 /*-----------------------About Section-------------------------*/
@@ -240,13 +239,15 @@ article p{
     padding:20px;
 }
 
+#bottom-background {
+background-image: url(/assets/img/footer-img.jpg);
+}
 
 
 /*-----------------------Footer Section-------------------------*/
 
 footer{
-    background-image: linear-gradient(to top, #323539, #06090f 55%);
-    padding: 250px 0px 20px 0px;
+    padding: 1px 0px 1px 0px;
 }
 
 footer nav{
@@ -266,19 +267,19 @@ footer nav ul li{
 }
 
 footer nav ul li a{
-    color: #90b8bc;
+    color: #c5f1f1;
     padding: 10px 25px;
     text-decoration: none;
 }
 
 footer nav ul li a.current-page{
-    background-color:#215c63;
+    background-color:#3c8383;
     padding: 10px 25px;
 }
 
 footer nav ul li a:hover{
-    background-color: #90b8bc;
-    color: #215c63;
+    background-color: #c5f1f1;
+    color: #3c8383;
     transition: .2s;
     border-radius: 7px;
 }
@@ -377,7 +378,8 @@ footer nav ul li a:hover{
        margin-top: 15px;
         margin-bottom: 10px;
         font-size: 2em;
-        color: #fff;
+        color: #c5f1f1
+;
         text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
@@ -386,9 +388,10 @@ footer nav ul li a:hover{
     }
     
     .hero-btn a:hover{
-        background-color: #00DDF4;
-        border: #00DDF4 2px solid;
-        color: #fff;
+        background-color: #3c8383;
+        border: #3c8383 2px solid;
+        color: #c5f1f1
+;
         transition: .2s;
     }
 
