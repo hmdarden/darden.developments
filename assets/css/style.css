@@ -15,8 +15,12 @@ body{
 }
 
 main{
-    background-color: #011e23;
+    background-color: #06090f;
     margin:0 auto;
+}
+
+header {
+    background-image: url(/assets/img/banner-img.jpg);
 }
 
 /*-----------------------Header/Nav Section-------------------------*/
@@ -241,7 +245,7 @@ article p{
 /*-----------------------Footer Section-------------------------*/
 
 footer{
-    background-image: linear-gradient(to top, #3B6F75, #011e23 55%);
+    background-image: linear-gradient(to top, #323539, #06090f 55%);
     padding: 250px 0px 20px 0px;
 }
 
