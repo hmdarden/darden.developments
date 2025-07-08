@@ -20,7 +20,7 @@ main{
 }
 
 header {
-    background-image: url(/assets/img/test.jpg);
+    background-image: url(../img/test.jpg);
 }
 
 /*-----------------------Header/Nav Section-------------------------*/
@@ -240,7 +240,7 @@ article p{
 }
 
 #bottom-background {
-background-image: url(/assets/img/test.jpg);
+background-image: url(../img/test.jpg);
 }
 
 
