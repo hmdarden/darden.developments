@@ -10,17 +10,23 @@ html{
 body{
     min-width:440px;
     font-family: sans-serif; 
-    color:#c5f1f1;
+    color:#435170;
     margin:0;
 }
 
 main{
-    background-color: #06090f;
+    background-color: #ecf8e4;
     margin:0 auto;
 }
 
 header {
-    background-image: url(../img/test.jpg);
+    background-image: url(../img/banner-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20px;
+    color: #ecf8e4;
+    border-bottom: 6px solid #3f9686;
 }
 
 /*-----------------------Header/Nav Section-------------------------*/
@@ -47,20 +53,20 @@ header nav ul li{
 }
 
 header nav ul li a{
-    color: #c5f1f1;
+    color: #ecf8e4;
     padding: 10px 25px;
     text-decoration: none;
 }
 
 header nav ul li a.current-page{
-    background-color:#3c8383;
+    background-color:#106077;
     padding: 10px 25px;
     border-radius: 7px;
 }
 
 header nav ul li a:hover{
-    background-color: #c5f1f1;
-    color: #3c8383;
+    background-color: #ecf8e4;
+    color: #106077;
     transition: .2s;
     padding: 10px 25px;
     border-radius: 7px;
@@ -77,7 +83,7 @@ header nav ul li a:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0px 170px 50px 200px;
+    padding: 0px 300px 50px 300px;
     text-align:left;
   }
 
@@ -132,29 +138,29 @@ header nav ul li a:hover{
   .hero-name{
     margin-bottom: 10px;
     font-size: 3em;
-    color: #c5f1f1;
+    color: #ecf8e4;
   }
 
   button {
     background-color: transparent;
-    border: #c5f1f1 2px solid;
+    border: #ecf8e4 2px solid;
     margin: 10px;
     padding: 5px 10px;
     border-radius: 7px;
-    color: #c5f1f1;
+    color: #ecf8e4;
   }
 
   .hero-btn a{
-    color: #c5f1f1;
+    color: #ecf8e4;
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
   }
 
   button:hover{
-    background-color: #3c8383;
-    border: #3c8383 2px solid;
-    color: #c5f1f1;
+    background-color: #106077;
+    border: #106077 2px solid;
+    color: #ecf8e4;
     transition: .2s;
   }
 
@@ -166,7 +172,7 @@ header nav ul li a:hover{
     margin:20px;
     text-align:center;
     text-transform: uppercase;
-    color:#78dbdb;
+    color:#ecf8e4;
   }
 
 /*-----------------------About Section-------------------------*/
@@ -240,7 +246,7 @@ article p{
 }
 
 #bottom-background {
-background-image: url(../img/test.jpg);
+/*background-image: url(../img/banner-img.png);*/
 }
 
 
@@ -267,19 +273,19 @@ footer nav ul li{
 }
 
 footer nav ul li a{
-    color: #c5f1f1;
+    color: #435170;
     padding: 10px 25px;
     text-decoration: none;
 }
 
 footer nav ul li a.current-page{
-    background-color:#3c8383;
+    background-color:#106077;
     padding: 10px 25px;
 }
 
 footer nav ul li a:hover{
-    background-color: #c5f1f1;
-    color: #3c8383;
+    background-color: #106077;
+    color: #ecf8e4;
     transition: .2s;
     border-radius: 7px;
 }
@@ -292,10 +298,10 @@ footer nav ul li a:hover{
 
 
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1570px){
 
     .hero{
-        padding: 0px 100px 50px 150px;
+        padding: 0px 200px 50px 200px;
     }
 }
 
@@ -323,9 +329,6 @@ footer nav ul li a:hover{
 
     .hero{
         padding: 75px 50px 10px 50px;
-    }
-    header{
-        background: #000;
     }
 
     .main-nav{
@@ -378,7 +381,7 @@ footer nav ul li a:hover{
        margin-top: 15px;
         margin-bottom: 10px;
         font-size: 2em;
-        color: #c5f1f1
+        color: #ecf8e4
 ;
         text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
@@ -390,7 +393,7 @@ footer nav ul li a:hover{
     .hero-btn a:hover{
         background-color: #3c8383;
         border: #3c8383 2px solid;
-        color: #c5f1f1
+        color: #ecf8e4
 ;
         transition: .2s;
     }
