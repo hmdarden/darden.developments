@@ -144,6 +144,7 @@ article.fltr{
   transition:.5s;
   margin: 0px 15px 15px 15px;
   background-color: #ddebd4;
+  text-align: left;
 }
 
 .fltr img{
