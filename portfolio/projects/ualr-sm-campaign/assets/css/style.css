@@ -20,8 +20,7 @@ body{
   align-items:flex-start;
   justify-content:center;
   padding:48px 20px;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+  font-family: sans-serif; 
   color:#121212;
 }
 
@@ -199,6 +198,13 @@ body{
   font-size:13px;
   color:var(--muted);
 }
+
+.copyright a {
+  text-decoration: none;   /* removes underline */
+  text-transform: uppercase; /* makes text uppercase */
+  color:var(--muted);
+}
+
 .footer-nav a{margin-left:14px; text-decoration:none; color:var(--muted)}
 
 /* Responsive adjustments */
