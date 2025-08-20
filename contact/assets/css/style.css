@@ -8,22 +8,17 @@ html{
 }
 
 :root {
-  --color1: #fafff7;
-  --color2: #435170;
-  --color3: #106077;
-  --color4: #165769;
-  --color5: #ddebd4;
-  --color6: #14484e;
-  --color7: #89bd6c;
-  --color8: #c0c0c0;
-  --color9: #3f9686;
-  --color10: #122727;
+  --color1: #F4F4F9;
+  --color2: #4B0082;
+  --color3: #6C63FF;
+  --color4: #3AB0A2;
+  --color5: #2C2C34;
 }
 
 body{
     font-family: sans-serif; 
     background-color: var(--color1);
-    color:var(--color2);
+    color:var(--color5);
     margin:0;
 }
 
@@ -51,7 +46,7 @@ img{
 }
 
 .main-header nav ul li a{
-  color: var(--color2);
+  color: var(--color3);
   padding: 10px 25px;
   text-decoration: none;
 }
@@ -64,7 +59,7 @@ img{
 }
 
 .main-header nav ul li a:hover{
-  background-color: var(--color4);
+  background-color: var(--color3);
   color: var(--color1);
   transition: .2s;
   border-radius:7px;
@@ -129,7 +124,7 @@ img{
   }
 
   .contact li a:hover{
-    color:var(--color7);
+    color:var(--color3);
   }
 
   .socials{
@@ -176,7 +171,7 @@ footer nav ul li{
 }
 
 footer nav ul li a{
-  color: var(--color2);
+  color: var(--color3);
   padding: 10px 25px;
   text-decoration: none;
 }
