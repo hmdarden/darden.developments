@@ -42,3 +42,8 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+function toggleNav() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+}

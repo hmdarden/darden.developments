@@ -1,98 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="HDarden | Personal Portfolio" />
-    <meta name="author" content="Hannah Darden" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HDarden | Home</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/logo3.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="description" content="HDarden | Personal Portfolio" />
+  <meta name="author" content="Hannah Darden" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HDarden | Home</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/logo3.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://kit.fontawesome.com/ccb178c4a6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <main>
+  
+  <header class="site-header">
+  <nav class="main-nav">
+    <div class="hamburger" onclick="toggleNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-links">
+      <li><a href="index.html" class="current-page">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="portfolio/index.html">Portfolio</a></li>
+      <li><a href="contact/index.html">Contact</a></li>
+    </ul>
+  </nav>
 
-        <header>
+   <section class="hero">
+    <div class="hero-profile">
+      <img src="assets/img/headshot5.png" alt="Hannah Darden Headshot"/>
+    </div>
+    <div class="hero-about">
+      <h1 class="hero-title">Design that makes sense. Words that do too.</h1>
+      <p class="hero-text">
+        Hi, I'm Hannah! I turn complexity into clarity. Design, words, research — whatever it takes to help people find what they need.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="assets/img/hdarden-resume.pdf" target="_blank">Resume</a>
+        <a class="btn" href="assets/img/hdarden-ats-resume.pdf" target="_blank">ATS Resume</a>
+      </div>
+    </div>
+  </section>
 
-            <nav id="main-nav" class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="current-page">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="portfolio/index.html">Portfolio</a></li>
-                    <li><a href="contact/index.html">Contact</a></li>
-                </ul>
-            </nav>
+  <p class="availability">Currently looking for 2025 career opportunities.</p>
+</header>
 
-            <section class="hero">
-                <div class="hero-profile">
-                    <img src="assets/img/headshot5.png"/>
-                </div>
-                <div class="hero-about">
-                    <img id="hero-mob-profile" src="assets/img/headshot5.png" alt="HMD Headshot"/>
-                    <h2 class="hero-name">Design that makes sense. Words that do too.</h2>
-                   <p>Hi, I'm Hannah! I turn complexity into clarity. Design, words, research — whatever it takes to help people find what they need.</p>
-                    <button class="hero-btn">
-                      <a href="assets/img/hdarden-resume.pdf" target="_blank">Resume</a> 
-                    </button>
-                   <!-- <button class="hero-btn">
-                        <a href="page-resume/resume.html">HTML Resume</a>
-                    </button> -->
-                  <button class="hero-btn">
-                        <a href="assets/img/hdarden-ats-resume.pdf" target="_blank">ATS Resume</a>
-                    </button>
-                </div>
-            </section>
+  <main>
+    <section id="about" class="about">
+      <div class="about-grid">
+        <article>
+          <i class="fa-sharp fa-solid fa-code fa-3x"></i>
+          <h3>What I Work With</h3>
+          <p>My toolkit includes Figma, Adobe Creative Cloud, Camtasia, HTML/CSS, JavaScript and WordPress — plus collaborative tools like Confluence and Monday.com. But more than any software, my real strengths are designing intuitive experiences, writing clear content and making sure users always come first.</p>
+        </article>
+        <article>
+          <i class="fa-solid fa-graduation-cap fa-3x"></i>
+          <h3>How I'm Growing</h3>
+          <p>I'm currently pursuing my MA in Professional and Technical Writing at the University of Arkansas - Little Rock, focusing on User Experience Design. I hold a BA in Web Design & Development and have completed the Google Project Management Certificate.</p>
+        </article>
+        <article>
+          <i class="fa-solid fa-puzzle-piece fa-3x"></i>
+          <h3>Outside the Screen</h3>
+          <p>When I’m not working, you’ll find me reading sci-fi/fantasy or in my studio metalsmithing, doing stained glass, or sculpting. For me, both digital and physical design are about problem-solving and making things clearer, more beautiful, and more useful.</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-            <section id="imp-p" class="imp-p">
-            <p>
-            Currently looking for 2025 career opportunities.
-            </p>
-             </section>
-        </header>
-       
-<section id="bottom-background" class="bottom-background">
-        <section id="about" class="about">
-            <!-- <h2>About</h2> -->
-            <div class="row">
-                <article class="col">
-                    <li><i class="fa-sharp fa-solid fa-code fa-4x"></i></li>
-                    <h3>What I Work With</h3>
-                    <p>My toolkit includes Figma, Adobe Creative Cloud, Camtasia, HTML/CSS, JavaScript and WordPress — plus collaborative tools like Confluence and Monday.com. But more than any software, my real strengths are designing intuitive experiences, writing clear content and making sure users always come first.</p>
-                </article>
-                <article class="col">
-                    <li><i class="fa-solid fa-graduation-cap fa-4x"></i></li>
-                    <h3>How I'm Growing</h3>
-                    <p>I'm currently pursuing my MA in Professional and Techincal Writing at the University of Arkansas - Little Rock, focusing my studies on User Experience Design. I hold a BA in Web Design & Development from the University of Arkansas - Little Rock. I've also completed the Google Project Management Certificate program.</p>
-                </article>
-                <article class="col">
-                    <li><i class="fa-solid fa-puzzle-piece fa-4x"></i></li>
-                    <h3>Outside the Screen</h3>
-                    <p>When I’m not working, you’ll usually find me lost in a good sci-fi or fantasy story — or in my studio with a torch or soldering iron in hand. I love metalsmithing, stained glass art, and sculpting because they challenge me to think through design problems step by step, just like in UX. Whether I’m building something physical or digital, I’m happiest when I’m making things clearer, more beautiful, and more useful for people.</p>
-                </article>
-            </div>
-        </section>
-
-        <footer>
-        <nav id="main-footer" class="main-footer">
-            <ul>
-                <li><a href="portfolio/index.html">Projects</a></li>
-                <li class="desktop-link"><a href="#top">&copyHDarden | Back to Top</a></li>
-                <li><a href="contact/index.html">Contact Me</a></li>
-                <li class="mobile-link"><a href="#top">&copyHDarden | Back to Top</a></li>
-            </ul>
-        </nav>
-        </footer>
-</section>
-    </main>
-
-</body>
+  <footer>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="portfolio/index.html">Projects</a></li>
+        <li><a href="#top">&copy; HDarden | Back to Top</a></li>
+        <li><a href="contact/index.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </footer>
 
 <script src="assets/js/script.js"></script>
-<script src="https://kit.fontawesome.com/ccb178c4a6.js" crossorigin="anonymous"></script>
-
+</body>
 </html>
