@@ -245,6 +245,18 @@ footer {
   color: var(--accent3);
 }
 
+/* Fade-in effect */
+.fade-in {
+  opacity: 0;               /* start invisible */
+  transform: translateY(20px); /* slight move up effect */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Mobile Responsive */
 
 /* Mobile Nav */
