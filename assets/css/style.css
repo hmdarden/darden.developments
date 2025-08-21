@@ -190,6 +190,27 @@ footer {
 
 
 /* Mobile nav adjustments */
+
+@media screen and (max-width: 1180px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Center text */
+  .hero-about {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
 @media screen and (max-width: 990px) {
     .hamburger {
         display: flex; /* show hamburger at 990px and below */
@@ -217,4 +238,30 @@ footer {
     .main-nav ul.show {
         display: flex; /* toggle menu on click */
     }
+
+
+  /* Make the hero stack vertically */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Resize image */
+  .hero-profile img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  /* Center text */
+  .hero-about {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 }
