@@ -84,7 +84,6 @@ body {
 
 .hero h1{
   font-size: 3rem;
-  letter-spacing: 10px;
     margin-bottom: 20px;
     color: var(--accent1);
 }
@@ -120,6 +119,58 @@ body {
   color: var(--accent3);
 }
 
+/* Center the JotForm */
+/* Center the JotForm completely */
+.form-wrapper {
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 990px; /* optional: limit width */
+}
+
+.form-wrapper iframe,
+.form-wrapper form {
+  width: 100% !important;  /* make the form take full width of wrapper */
+  max-width: 600px;         /* optional: cap form width */
+  margin: 0 auto;           /* center it */
+  display: block;
+}
+
+/* Fixed Social Tag */
+.socials-fixed {
+  position: fixed;
+  top: 50%;
+  left: 20px; /* spacing from the edge */
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.socials-fixed ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socials-fixed li {
+  margin: 1rem 0;
+}
+
+.socials-fixed a {
+  text-decoration: none;
+  color: var(--accent1);
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;  /* consistent size for icons */
+  height: 40px;
+}
+
+.socials-fixed a:hover {
+  color: var(--accent3);
+}
+
 /* FOOTER */
 footer {
   background: #fff;
@@ -142,6 +193,18 @@ footer {
 
 .footer-nav a:hover {
   color: var(--accent3);
+}
+
+/* Fade-in effect */
+.fade-in {
+  opacity: 0;               /* start invisible */
+  transform: translateY(20px); /* slight move up effect */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Mobile Responsive */
@@ -205,3 +268,17 @@ footer {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .footer-nav ul {
+    flex-direction: column;       /* stack links vertically */
+    gap: 0.5rem;                  /* smaller spacing for stacked items */
+    align-items: center;          /* center align the links */
+  }
+
+  .footer-nav a {
+    font-size: 0.85rem;           /* smaller font size */
+    white-space: nowrap;           /* prevent wrapping */
+  }
+}
+

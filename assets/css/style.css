@@ -79,7 +79,6 @@ body {
 
 .hero-profile img {
   max-width: 550px;
-  border-radius: 10% 10% 70% 30%;
 }
 
 .hero-about {
@@ -265,3 +264,17 @@ footer {
     gap: 1rem;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .footer-nav ul {
+    flex-direction: column;       /* stack links vertically */
+    gap: 0.5rem;                  /* smaller spacing for stacked items */
+    align-items: center;          /* center align the links */
+  }
+
+  .footer-nav a {
+    font-size: 0.85rem;           /* smaller font size */
+    white-space: nowrap;           /* prevent wrapping */
+  }
+}
+
