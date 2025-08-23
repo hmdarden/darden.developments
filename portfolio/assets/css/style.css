@@ -194,7 +194,7 @@ article.fltr h2 {
 
 article.fltr h3 {
     font-size: 1rem;
-    color: var(--accent3);
+    color: var(--accent1);
     margin-bottom: 10px;
 }
 
@@ -207,10 +207,27 @@ article.fltr a {
     text-decoration: none;
     color: var(--accent1);
     transition: color 0.3s;
+    
 }
+
 
 article.fltr a:hover {
     color: var(--accent3);
+}
+
+/* Tools & Skills List */
+article.fltr ul.tools-list {
+    padding-left: 25px;        /* space from edge */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+
+article.fltr ul.tools-list li {
+    margin-bottom: 5px;        /* spacing between items */
+    font-size: 0.9rem;
+    color: var(--accent2);     /* apply color to each bullet text */
+    list-style-type: none;     /* ensure bullets show */
 }
 
 .post-date {
