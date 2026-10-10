@@ -1,63 +1,94 @@
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("fltr");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
+
+// HDarden Portfolio
+// Project Filtering & Mobile Navigation
+
+// Filter portfolio projects by category
+function filterSelection(category) {
+    const projects = document.querySelectorAll(".fltr");
+    const buttons = document.querySelectorAll(".filter-buttons .btn");
+    const dropdown = document.getElementById("filterDropdown");
+
+    projects.forEach((project) => {
+        const matchesCategory =
+            category === "all" || project.classList.contains(category);
+
+        if (matchesCategory) {
+            project.style.display = "";
+            project.classList.add("show");
+        } else {
+            project.style.display = "none";
+            project.classList.remove("show");
+        }
+    });
+
+    // Update active desktop filter button
+    buttons.forEach((button) => {
+        const onclick = button.getAttribute("onclick") || "";
+        const match = onclick.match(/filterSelection\('([^']+)'\)/);
+        const buttonCategory = match ? match[1] : "";
+
+        const isActive = buttonCategory === category;
+
+        button.classList.toggle("active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+    });
+
+    // Keep mobile dropdown synchronized
+    if (dropdown) {
+        dropdown.value = category;
+    }
 }
 
-function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) {
-        element.className += " " + arr2[i];
-      }
-    }
-  }
 
-  function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);
-      }
-    }
-    element.className = arr1.join(" ");
-  }
-
-  var btnContainer = document.getElementById("second-nav-btn");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
+// Toggle mobile navigation
 function toggleNav() {
-    const navLinks = document.getElementById('nav-links');
-    navLinks.classList.toggle('show');
+    const navLinks = document.getElementById("nav-links");
+    const hamburger = document.querySelector(".hamburger");
+
+    if (!navLinks) return;
+
+    const isOpen = navLinks.classList.toggle("active");
+
+    // Supports navigation styles using the "show" class
+    navLinks.classList.toggle("show", isOpen);
+
+    if (hamburger) {
+        hamburger.classList.toggle("active", isOpen);
+        hamburger.setAttribute("aria-expanded", String(isOpen));
+    }
 }
 
-// Fade-in on scroll
-const faders = document.querySelectorAll('.fade-in');
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target); // fade-in once
+// Initialize portfolio functionality
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Display all active projects when page loads
+    filterSelection("all");
+
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    // Allow keyboard navigation for hamburger menu
+    if (hamburger) {
+        hamburger.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                toggleNav();
+            }
+        });
     }
-  });
-}, { threshold: 0.1 }); // trigger when 10% of element is visible
 
-faders.forEach(fader => observer.observe(fader));
+    // Close mobile menu when a navigation link is selected
+    if (navLinks) {
+        navLinks.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active", "show");
+
+                if (hamburger) {
+                    hamburger.classList.remove("active");
+                    hamburger.setAttribute("aria-expanded", "false");
+                }
+            });
+        });
+    }
+});
