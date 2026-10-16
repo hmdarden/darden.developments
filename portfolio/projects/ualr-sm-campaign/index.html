@@ -1,129 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="HDarden | Personal Portfolio" />
-    <meta name="author" content="Hannah Darden" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HDarden | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="../assets/img/logo3.ico">
-    <link rel="stylesheet" href="../ualr-sm-campaign/assets/css/style.css" />
-</head>
-<body>
-
-<div class="page-bg">
-    <main class="card">
-      <header class="card-header">
-        <div class="brand">Hannah Darden</div>
-        <nav class="top-nav">
-          <a href="../../../index.html">Home</a>
-          <a href="../../../index.html#about">About</a>
-          <a href="../../../portfolio/index.html">Portfolio</a>
-          <a href="../../../contact/index.html">Contact</a>
-        </nav>
-      </header>
-
-      <section class="hero">
-        <h1 class="project-title">
-          Social Media Campaign:
-          <br />
-          UA - Little Rock Grad School
-        </h1>
-
-        <div class="hero-grid">
-          <figure class="hero-photo">
-            <img src="assets/img/smc.jpg" alt="UALR grad school collage" />
-            <figcaption>Collage of social media posts for the UA - Little Rock Graduate School campaign</figcaption>
-          </figure>
-
-          <aside class="project-goals">
-            <h3>Project Description / Goals:</h3>
-            <ol>
-              <li><strong>Maintain and expand</strong> an ongoing themed social media campaign targeting graduate students</li>
-              <li><strong>Create consistent, relatable content</strong> to motivate, support, and inform the graduate student community</li>
-            </ol>
-          </aside>
-        </div>
-      </section>
-
-      <section class="creative-process">
-        <div class="process-left">
-          <h3>Creative Process and Strategy:</h3>
-          <ol>
-            <li><strong>Wrote all post copy</strong> for recurring themes: 
-              <ul>#MotivationMondays</ul>
-              <ul>#WellnessWednesdays</ul>
-              <ul>#GradFactFridays</ul>
-            </li>
-            <li><strong>Designed simple, cohesive static images</strong> to complement each post</li>
-            <li>Planned a <strong>semester-long content calendar</strong> to ensure variety and relevance</li>
-            <li><strong>Maintained a steady posting schedule</strong>, publishing most Mondays, Wednesdays, and Fridays</li>
-            <li>Focused on <strong>consistency</strong> to boost audience engagement and strengthen the Graduate School’s online presence</li>
-          </ol>
-        </div>
-
-        <div class="phone-mockup">
-          <!-- Replace with screenshot of Instagram post -->
-          <img src="assets/img/fb-feed.png" alt="Facebook Screenshot" />
-          <figcaption>Grad School Career Post — UA Little Rock Facebook, 2025</figcaption>
-        </div>
-      </section>
-
-      <section class="gallery">
-        <figure>
-          <img src="assets/img/mm1.png" alt="Motivation Monday" />
-          <figcaption>Motivational Monday Post — UA Little Rock Facebook, 2025</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/img/ww1.png" alt="Wellness Wednesday" />
-          <figcaption>Wellness Wednesday Post — UA Little Rock Facebook, 2025</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/img/ff1.png" alt="Fact Friday 1" />
-          <figcaption>Grad Fact Friday Post — UA Little Rock Facebook, 2025</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/img/ff2.png" alt="Fact Friday 1" />
-          <figcaption>Grad Fact Friday Post — UA Little Rock Facebook, 2025</figcaption>
-        </figure>
-      </section>
-
-      <section class="skills-results">
-        <div class="skills">
-          <h4>Skills Used and Learned</h4>
-          <ul class="skill-list">
-            <li>Social media copywriting</li>
-            <li>Content planning</li>
-            <li>Campaign strategy</li>
-            <li>Graphic Design</li>
-          </ul>
-        </div>
-
-        <div class="results">
-          <h4>Results:</h4>
-          <ul>
-            <li>Sustained the Graduate School’s social media presence with regular, reliable posting throughout the semester</li>
-            <li>Reinforced brand identity by establishing recognizable weekly post themes</li>
-            <li>Provided ongoing motivational, wellness, and informational content for graduate students, contributing to a supportive online environment</li>
-          </ul>
-        </div>
-      </section>
-
-      <footer class="card-footer">
-        <div class="contact">
-          <div class="name">Hannah Darden</div>
-          <div class="copyright"><a href="#top">&copyHDarden | Back to Top</a></div>
-        </div>
-
-        <nav class="footer-nav">
-          <a href="../../../index.html">Home</a>
-          <a href="../../../portfolio/index.html"  class="current-page">Portfolio</a>
-          <a href="../../../contact/index.html">Contact Me</a>
-        </nav>
-      </footer>
-    </main>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="HDarden | Personal Portfolio" name="description"/>
+  <meta content="Hannah Darden" name="author"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   HDarden | Portfolio
+  </title>
+  <link href="../assets/img/logo3.ico" rel="icon" type="image/x-icon"/>
+  <link href="../ualr-sm-campaign/assets/css/style.css" rel="stylesheet"/>
+  <style>
+   /* Scoped carousel styles; original site navigation/footer remain unchanged. */
+.post-carousel { margin: 2.5rem 0; min-width: 0; }
+.post-carousel h3 { margin-bottom: 1rem; }
+.post-carousel .carousel-controls { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:.8rem; }
+.post-carousel .carousel-controls p { margin:0; font-size:.9rem; }
+.post-carousel .carousel-buttons { display:flex; gap:.5rem; }
+.post-carousel .carousel-buttons button { cursor:pointer; background:#741b39; color:white; border:0; border-radius:999px; width:2.4rem; height:2.4rem; font-size:1.2rem; }
+.post-carousel .carousel-track { display:flex; gap:1rem; overflow-x:auto; scroll-snap-type:x mandatory; scroll-behavior:smooth; padding:0 0 1rem; scrollbar-width:thin; }
+.post-carousel .carousel-slide { flex:0 0 300px; max-width:85%; margin:0; scroll-snap-align:start; }
+.post-carousel .carousel-slide button { display:block; width:100%; border:0; padding:0; background:transparent; cursor:zoom-in; }
+.post-carousel .carousel-slide img { width:300px; max-width:100%; height:200px; object-fit:cover; border-radius:8px; display:block; }
+.post-carousel .carousel-slide figcaption { font-size:.9rem; margin-top:.6rem; line-height:1.4; }
+.post-lightbox { border:0; padding:1rem; border-radius:12px; max-width:min(96vw,1100px); max-height:95vh; background:white; color:#222; }
+.post-lightbox::backdrop { background:rgba(0,0,0,.82); }
+.post-lightbox img { display:block; max-width:100%; max-height:78vh; width:auto; height:auto; margin:auto; object-fit:contain; }
+.post-lightbox .lightbox-bar { display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-bottom:.6rem; }
+.post-lightbox .lightbox-bar p { margin:0; }
+.post-lightbox .lightbox-bar button { cursor:pointer; border:0; background:#741b39; color:white; border-radius:6px; padding:.5rem .8rem; }
+@media(max-width:600px){ .post-carousel .carousel-slide { flex-basis: min(300px,85vw); } }
+  </style>
+ </head>
+ <body id="top">
+  <div class="page-bg">
+   <main class="card">
+    <header class="card-header">
+     <div class="brand">
+      Hannah Darden
+     </div>
+     <nav class="top-nav">
+      <a href="../../../index.html">
+       Home
+      </a>
+      <a href="../../../index.html#about">
+       About
+      </a>
+      <a href="../../../portfolio/index.html">
+       Portfolio
+      </a>
+      <a href="../../../contact/index.html">
+       Contact
+      </a>
+     </nav>
+    </header>
+    <section class="hero">
+     <h1 class="project-title">
+      Social Media Campaign:
+      <br/>
+      UA - Little Rock Grad School
+     </h1>
+     <div class="hero-grid">
+      <figure class="hero-photo">
+       <img alt="UALR grad school collage" src="assets/img/smc.jpg"/>
+       <figcaption>
+        Collage of social media posts for the UA - Little Rock Graduate School campaign
+       </figcaption>
+      </figure>
+      <aside class="project-goals">
+       <h3>
+        Project Description / Goals:
+       </h3>
+       <ol>
+        <li>
+         <strong>
+          Maintain and expand
+         </strong>
+         an ongoing themed social media campaign targeting graduate students
+        </li>
+        <li>
+         <strong>
+          Create consistent, relatable content
+         </strong>
+         to motivate, support, and inform the graduate student community
+        </li>
+       </ol>
+      </aside>
+     </div>
+    </section>
+    <section class="creative-process">
+     <div class="process-left">
+      <h3>
+       Creative Process and Strategy:
+      </h3>
+      <ol>
+       <li>
+        <strong>
+         Wrote all post copy
+        </strong>
+        for recurring themes:
+        <ul>
+         <li>
+          #MotivationMondays
+         </li>
+         <li>
+          #WellnessWednesdays
+         </li>
+         <li>
+          #GradFactFridays
+         </li>
+        </ul>
+       </li>
+       <li>
+        <strong>
+         Designed simple, cohesive static images
+        </strong>
+        to complement each post
+       </li>
+       <li>
+        Planned a
+        <strong>
+         semester-long content calendar
+        </strong>
+        to ensure variety and relevance
+       </li>
+       <li>
+        <strong>
+         Maintained a steady posting schedule
+        </strong>
+        , publishing most Mondays, Wednesdays, and Fridays
+       </li>
+       <li>
+        Focused on
+        <strong>
+         consistency
+        </strong>
+        to boost audience engagement and strengthen the Graduate School&rsquo;s online presence
+       </li>
+      </ol>
+     </div>
+     <div class="phone-mockup">
+      <img alt="Facebook Screenshot" src="assets/img/fb-feed.png"/>
+      <figcaption>
+       Grad School Career Post &mdash; UA Little Rock Facebook, 2025
+      </figcaption>
+     </div>
+    </section>
+    <section aria-label="Social media post examples" class="post-carousel" data-post-carousel="">
+     <h3>
+      Social Media Posts
+     </h3>
+     <div class="carousel-controls">
+      <p>
+       Scroll through the posts or select one for a closer look.
+      </p>
+      <div class="carousel-buttons">
+       <button aria-label="Previous posts" data-direction="prev" type="button">
+        &larr;
+       </button>
+       <button aria-label="Next posts" data-direction="next" type="button">
+        &rarr;
+       </button>
+      </div>
+     </div>
+     <div class="carousel-track" tabindex="0">
+      <figure class="carousel-slide">
+       <button aria-label="View larger image: Motivational Monday Post &mdash; UA Little Rock Facebook, 2025" data-alt="Motivational Monday Post &mdash; UA Little Rock Facebook, 2025" data-full-image="assets/img/mm1.png" type="button">
+        <img alt="Motivational Monday Post &mdash; UA Little Rock Facebook, 2025" loading="lazy" src="assets/img/mm1.png"/>
+       </button>
+       <figcaption>
+        Motivational Monday Post &mdash; UA Little Rock Facebook, 2025
+       </figcaption>
+      </figure>
+      <figure class="carousel-slide">
+       <button aria-label="View larger image: Wellness Wednesday Post &mdash; UA Little Rock Facebook, 2025" data-alt="Wellness Wednesday Post &mdash; UA Little Rock Facebook, 2025" data-full-image="assets/img/ww1.png" type="button">
+        <img alt="Wellness Wednesday Post &mdash; UA Little Rock Facebook, 2025" loading="lazy" src="assets/img/ww1.png"/>
+       </button>
+       <figcaption>
+        Wellness Wednesday Post &mdash; UA Little Rock Facebook, 2025
+       </figcaption>
+      </figure>
+      <figure class="carousel-slide">
+       <button aria-label="View larger image: Grad Fact Friday Post &mdash; UA Little Rock Facebook, 2025" data-alt="Grad Fact Friday Post &mdash; UA Little Rock Facebook, 2025" data-full-image="assets/img/ff1.png" type="button">
+        <img alt="Grad Fact Friday Post &mdash; UA Little Rock Facebook, 2025" loading="lazy" src="assets/img/ff1.png"/>
+       </button>
+       <figcaption>
+        Grad Fact Friday Post &mdash; UA Little Rock Facebook, 2025
+       </figcaption>
+      </figure>
+      <figure class="carousel-slide">
+       <button aria-label="View larger image: Grad Fact Friday Post &mdash; UA Little Rock Facebook, 2025" data-alt="Grad Fact Friday Post &mdash; UA Little Rock Facebook, 2025" data-full-image="assets/img/ff2.png" type="button">
+        <img alt="Grad Fact Friday Post &mdash; UA Little Rock Facebook, 2025" loading="lazy" src="assets/img/ff2.png"/>
+       </button>
+       <figcaption>
+        Grad Fact Friday Post &mdash; UA Little Rock Facebook, 2025
+       </figcaption>
+      </figure>
+     </div>
+    </section>
+    <dialog aria-label="Enlarged social media post" class="post-lightbox">
+     <div class="lightbox-bar">
+      <p data-lightbox-label="">
+      </p>
+      <button data-close-lightbox="" type="button">
+       Close &times;
+      </button>
+     </div>
+     <img alt=""/>
+    </dialog>
+    <section class="skills-results">
+     <div class="skills">
+      <h4>
+       Skills Used and Learned
+      </h4>
+      <ul class="skill-list">
+       <li>
+        Social media copywriting
+       </li>
+       <li>
+        Content planning
+       </li>
+       <li>
+        Campaign strategy
+       </li>
+       <li>
+        Graphic Design
+       </li>
+      </ul>
+     </div>
+     <div class="results">
+      <h4>
+       Results:
+      </h4>
+      <ul>
+       <li>
+        Sustained the Graduate School&rsquo;s social media presence with regular, reliable posting throughout the semester
+       </li>
+       <li>
+        Reinforced brand identity by establishing recognizable weekly post themes
+       </li>
+       <li>
+        Provided ongoing motivational, wellness, and informational content for graduate students, contributing to a supportive online environment
+       </li>
+      </ul>
+     </div>
+    </section>
+    <footer class="card-footer">
+     <div class="contact">
+      <div class="name">
+       Hannah Darden
+      </div>
+      <div class="copyright">
+       <a href="#top">
+        &copy; HDarden | Back to Top
+       </a>
+      </div>
+     </div>
+     <nav class="footer-nav">
+      <a href="../../../index.html">
+       Home
+      </a>
+      <a class="current-page" href="../../../portfolio/index.html">
+       Portfolio
+      </a>
+      <a href="../../../contact/index.html">
+       Contact Me
+      </a>
+     </nav>
+    </footer>
+   </main>
   </div>
-
-</body>
+  <script>
+   (function () {
+  document.querySelectorAll('[data-post-carousel]').forEach(function (carousel) {
+    var track = carousel.querySelector('.carousel-track');
+    carousel.querySelector('[data-direction="prev"]').addEventListener('click', function () {
+      track.scrollBy({ left: -(track.querySelector('.carousel-slide').getBoundingClientRect().width + 16), behavior: 'smooth' });
+    });
+    carousel.querySelector('[data-direction="next"]').addEventListener('click', function () {
+      track.scrollBy({ left: track.querySelector('.carousel-slide').getBoundingClientRect().width + 16, behavior: 'smooth' });
+    });
+  });
+  var dialog = document.querySelector('.post-lightbox');
+  if (!dialog) return;
+  var image = dialog.querySelector('img');
+  var label = dialog.querySelector('[data-lightbox-label]');
+  document.querySelectorAll('[data-full-image]').forEach(function (button) {
+    button.addEventListener('click', function () {
+      image.src = button.dataset.fullImage;
+      image.alt = button.dataset.alt || '';
+      label.textContent = button.dataset.alt || 'Social media post';
+      if (typeof dialog.showModal === 'function') dialog.showModal();
+      else window.open(image.src, '_blank', 'noopener');
+    });
+  });
+  dialog.querySelector('[data-close-lightbox]').addEventListener('click', function () { dialog.close(); });
+  dialog.addEventListener('click', function (event) { if (event.target === dialog) dialog.close(); });
+})();
+  </script>
+ </body>
 </html>
