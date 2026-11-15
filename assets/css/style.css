@@ -58,9 +58,9 @@ a:focus-visible {
 /* Header and navigation */
 
 .site-header {
+  border-bottom: 3px solid var(--caramel);
   background: var(--espresso);
   color: var(--paper);
-  border-bottom: 3px solid var(--caramel);
 }
 
 .nav-inner,
@@ -90,13 +90,13 @@ a:focus-visible {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 .main-nav ul {
-  gap: 0.25rem 0.6rem;
   justify-content: flex-end;
+  gap: 0.25rem 0.6rem;
 }
 
 .main-nav li a {
@@ -120,7 +120,7 @@ a:focus-visible {
   outline-color: var(--paper);
 }
 
-/* Homepage banner */
+/* Hero */
 
 .hero {
   background: var(--cream);
@@ -179,8 +179,7 @@ a:focus-visible {
   font-size: 0.875rem;
   font-weight: 700;
   text-decoration: none;
-  transition: background-color 180ms ease, color 180ms ease,
-    border-color 180ms ease;
+  transition: background-color 180ms, color 180ms, border-color 180ms;
 }
 
 .btn-primary {
@@ -205,7 +204,7 @@ a:focus-visible {
   background: var(--paper);
 }
 
-/* About section */
+/* About */
 
 .about {
   padding-block: clamp(3.5rem, 7vw, 6rem);
@@ -234,7 +233,6 @@ a:focus-visible {
 
 .about-grid article {
   padding: clamp(1.25rem, 2.5vw, 2rem);
-  border: 1px solid var(--rule);
   border-top: 3px solid var(--caramel);
   background: var(--paper);
 }
@@ -286,15 +284,37 @@ a:focus-visible {
   text-underline-offset: 0.25em;
 }
 
-/* Desktop portrait */
+/* Homepage reveal */
+
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in.reveal-ready:not(.visible):not(:focus-within) {
+    opacity: 0;
+  }
+
+  .fade-in.reveal-ready.visible:not(:focus-within) {
+    animation: fade-in-up 1s ease-out;
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Responsive layout */
 
 @media (min-width: 56.01rem) {
   .hero-profile img {
     transform: scale(1.16);
   }
 }
-
-/* Tablet and mobile */
 
 @media (max-width: 56rem) {
   .hero-inner {
