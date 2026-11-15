@@ -2,75 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="HDarden | Personal Portfolio" />
-  <meta name="author" content="Hannah Darden" />
+  <meta name="description" content="HDarden | Personal Portfolio">
+  <meta name="author" content="Hannah Darden">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HDarden | Home</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/logo1.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/img/logo4.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://kit.fontawesome.com/ccb178c4a6.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  
+<body id="top">
+
   <header class="site-header">
-  <nav class="main-nav">
-    <div class="hamburger" onclick="toggleNav()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <ul id="nav-links">
-      <li><a href="index.html" class="current-page">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="portfolio/index.html">Portfolio</a></li>
-      <li><a href="contact/index.html">Contact</a></li>
-    </ul>
-  </nav>
-
-   <section class="hero fade-in">
-    <div class="hero-profile">
-      <img src="assets/img/logo1.png" alt="Hannah Darden Logo"/>
-    </div>
-    <div class="hero-about">
-      <h1 class="hero-title">Connecting the right message with the right audience.</h1>
-      <p class="hero-text">
-      Hi, I’m Hannah! I bring together digital strategy, content development, and audience insight to create meaningful, effective communication. Whether I’m optimizing campaigns, developing content, exploring creative concepts, or improving user experiences, my focus is on making digital experiences more intentional, accessible, and engaging.
-      </p>
-      <div class="hero-actions">
-        <a class="btn" href="assets/img/hdarden-resume.pdf" target="_blank">Resume</a>
-        <a class="btn" href="portfolio/index.html">Portfolio</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a class="site-name" href="index.html">Hannah Darden</a>
+        <ul id="nav-links">
+          <li><a href="index.html" class="current-page" aria-current="page">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="portfolio/index.html">Portfolio</a></li>
+          <li><a href="contact/index.html">Contact</a></li>
+        </ul>
       </div>
-    </div>
-  </section>
-
-  <!-- <p class="availability">Currently looking for 2025 career opportunities.</p> -->
-</header>
+    </nav>
+  </header>
 
   <main>
-    <section id="about" class="about fade-in">
-      <div class="about-grid">
-        <article>
-          <i class="fa-sharp fa-solid fa-code fa-3x"></i>
-          <h3>What I Work With</h3>
-          <p>My toolkit includes Meta Ads Manager, Google Ads, Google Analytics, Figma, Adobe Creative Cloud, WordPress, HTML/CSS, and collaborative platforms like Confluence, Asana, and Monday.com. I use these tools to develop creative content, plan and manage digital campaigns, refine audience targeting, and analyze performance. Beyond the tools themselves, my strengths lie in blending creativity with strategy—developing engaging content, connecting messages with the right audiences, and translating data into actionable insights. Whether I'm shaping a campaign, recommending creative approaches, or evaluating results, I focus on making communication both meaningful and effective.</p>
-        </article>
-        <article>
-          <i class="fa-solid fa-graduation-cap fa-3x"></i>
-          <h3>My Foundation</h3>
-          <p>I earned my MA in Professional and Technical Writing from the University of Arkansas at Little Rock, with an emphasis on Digital Content Strategy, Audience Research, and User Experience. I also hold a BA in Web Design & Development, along with certificates in Digital Marketing, Google Analytics, and Google Project Management. My background in content creation, creative design, digital strategy, UX, and analytics allows me to combine creative thinking with audience insights to develop engaging content and strategic campaigns that deliver measurable results.</p>
-        </article>
-        <article>
-          <i class="fa-solid fa-puzzle-piece fa-3x"></i>
-          <h3>Beyond the Work</h3>
-          <p>When I’m not working, you’ll find me reading sci-fi/fantasy or in a studio metalsmithing, doing stained glass, or sculpting. For me, physical design is another way to practice problem-solving and making things clearer, more beautiful, and more useful.</p>
-        </article>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-profile">
+          <img src="assets/img/logo4.png" alt="Portrait of Hannah Darden in a retro arch">
+        </div>
+
+        <div class="hero-about">
+          <h1 class="hero-title" id="hero-title">
+            Connecting the right message with the <em>right audience.</em>
+          </h1>
+
+          <p class="hero-text">
+            Hi, I’m Hannah! I bring together digital strategy, content development, and audience insight to create meaningful, effective communication. Whether I’m optimizing campaigns, developing content, exploring creative concepts, or improving user experiences, my focus is on making digital experiences more intentional, accessible, and engaging.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="portfolio/index.html">Portfolio <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-secondary" href="assets/img/hdarden-resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="about-inner">
+        <h2 id="about-title">About me</h2>
+
+        <div class="about-grid">
+          <article>
+            <i class="fa-sharp fa-solid fa-code" aria-hidden="true"></i>
+            <h3>What I Work With</h3>
+            <p>My toolkit includes Meta Ads Manager, Google Ads, Google Analytics, Figma, Adobe Creative Cloud, WordPress, HTML/CSS, and collaborative platforms like Confluence, Asana, and Monday.com. I use these tools to develop creative content, plan and manage digital campaigns, refine audience targeting, and analyze performance. Beyond the tools themselves, my strengths lie in blending creativity with strategy—developing engaging content, connecting messages with the right audiences, and translating data into actionable insights. Whether I'm shaping a campaign, recommending creative approaches, or evaluating results, I focus on making communication both meaningful and effective.</p>
+          </article>
+
+          <article>
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            <h3>My Foundation</h3>
+            <p>I earned my MA in Professional and Technical Writing from the University of Arkansas at Little Rock, with an emphasis on Digital Content Strategy, Audience Research, and User Experience. I also hold a BA in Web Design &amp; Development, along with certificates in Digital Marketing, Google Analytics, and Google Project Management. My background in content creation, creative design, digital strategy, UX, and analytics allows me to combine creative thinking with audience insights to develop engaging content and strategic campaigns that deliver measurable results.</p>
+          </article>
+
+          <article>
+            <i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i>
+            <h3>Beyond the Work</h3>
+            <p>When I’m not working, you’ll find me reading sci-fi/fantasy or in a studio metalsmithing, doing stained glass, or sculpting. For me, physical design is another way to practice problem-solving and making things clearer, more beautiful, and more useful.</p>
+          </article>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <nav class="footer-nav">
+  <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer navigation">
       <ul>
         <li><a href="portfolio/index.html">Projects</a></li>
         <li><a href="#top">&copy; HDarden | Back to Top</a></li>
@@ -79,6 +88,6 @@
     </nav>
   </footer>
 
-<script src="assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

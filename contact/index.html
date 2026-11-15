@@ -2,76 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="HDarden | Contact" />
-  <meta name="author" content="Hannah Darden" />
+  <meta name="description" content="HDarden | Contact">
+  <meta name="author" content="Hannah Darden">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HDarden | Contact</title>
-  <link rel="icon" type="image/x-icon" href="../assets/img/logo1.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../contact/assets/css/style.css" />
+  <link rel="icon" type="image/x-icon" href="../assets/img/logo4.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap">
+  <link rel="stylesheet" href="../contact/assets/css/style.css">
   <script src="https://kit.fontawesome.com/ccb178c4a6.js" crossorigin="anonymous"></script>
 </head>
-<body>
-
-  <!-- HEADER -->
+<body id="top">
   <header class="site-header">
-    <nav class="main-nav">
-      <div class="hamburger" onclick="toggleNav()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul id="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../index.html#about">About</a></li>
-        <li><a href="../portfolio/index.html">Portfolio</a></li>
-        <li><a href="index.html" class="current-page">Contact</a></li>
-      </ul>
-    </nav>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a class="site-name" href="../index.html">Hannah Darden</a>
 
-    <section class="hero">
-      <div class="hero-about">
-        <h1 class="hero-title">Contact Me</h1>
-        <p class="hero-text">I’d love to hear from you! Reach out via email or connect with me on LinkedIn.</p>
+        <ul id="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../portfolio/index.html">Portfolio</a></li>
+          <li><a href="index.html" class="current-page" aria-current="page">Contact</a></li>
+        </ul>
       </div>
-    </section>
+    </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
- <main>
-  <!-- Centered Form -->
-  <div class="form-wrapper">
-    <script type="text/javascript" src="https://form.jotform.com/jsform/231471076187155"></script>
-  </div>
+  <main class="contact-page">
+    <div class="contact-inner">
+      <section class="contact-intro" aria-labelledby="contact-title">
+        <h1 id="contact-title">Contact <em>Me</em></h1>
+        <p>I’d love to hear from you! Reach out via email or connect with me on LinkedIn.</p>
 
-  <!-- Fixed Social Links -->
-  <section class="socials-fixed">
-  <ul>
-    <li>
-      <a itemprop="url" href="mailto:hmdarden97@gmail.com">
-        <i class="fa-solid fa-envelope fa-2xl"></i>
-      </a>
-    </li>
-    <li>
-      <a itemprop="url" href="https://www.linkedin.com/in/hannah-darden/">
-        <i class="fa-brands fa-linkedin-in fa-2xl"></i>
-      </a>
-    </li>
-  </ul>
-</section>
-</main>
+        <ul class="contact-links">
+          <li>
+            <a class="contact-link contact-link-primary" href="mailto:hmdarden97@gmail.com">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              Email Me
+            </a>
+          </li>
+          <li>
+            <a class="contact-link" href="https://www.linkedin.com/in/hannah-darden/">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <nav class="footer-nav">
+      <section class="contact-form" aria-label="Contact form">
+        <div class="form-wrapper">
+          <script src="https://form.jotform.com/jsform/231471076187155"></script>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer navigation">
       <ul>
         <li><a href="../portfolio/index.html">Projects</a></li>
         <li><a href="#top">&copy; HDarden | Back to Top</a></li>
-        <li><a href="index.html" class="current-page">Contact Me</a></li>
+        <li><a href="index.html" class="current-page" aria-current="page">Contact Me</a></li>
       </ul>
     </nav>
   </footer>
 
-  <script src="../contact/assets/js/script.js"></script>
+ <script type="text/javascript" src="https://form.jotform.com/jsform/231471076187155"></script>
 </body>
 </html>
